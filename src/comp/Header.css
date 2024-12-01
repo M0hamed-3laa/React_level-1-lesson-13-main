@@ -1,0 +1,64 @@
+.hide-when-mobile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.signout {
+  all: unset;
+  padding: 8px 15px;
+}
+.main-list {
+  padding: 30px;
+  font-size: 19px;
+  position: relative;
+}
+
+.main-link {
+  padding: 8px 15px;
+}
+
+.main-link:hover,
+.main-link.active {
+  color: cyan;
+  box-shadow: 0 0 5px cyan;
+  border-radius: 5px;
+}
+
+/* ==================
+    3. header of mobile
+===================== */
+
+.logo {
+  animation: logoani 12s infinite;
+}
+
+@keyframes logoani {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+
+  50% {
+    letter-spacing: 1.5px;
+    opacity: 1;
+  }
+}
+
+.logo:hover {
+  font-size: x-large;
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+header {
+  animation: down 1s 1;
+}
